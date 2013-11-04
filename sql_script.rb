@@ -10,8 +10,9 @@ Query OK, 0 rows affected (0.06 sec)
 mysql> INSERT INTO clients values (1, 011234, "Steve", "Programmer", "Male", 25);
 Query OK, 1 row affected (0.01 sec)
 
-mysql> SELECT * FROM clients; 
-                                                                                  +----+----------------+-------+------------+--------+---------+
+mysql> SELECT * FROM clients;
+
++----+----------------+-------+------------+--------+---------+
 | id | account_number | name  | job        | gender | balance |
 +----+----------------+-------+------------+--------+---------+
 |  1 |          11234 | Steve | Programmer | Male   |      25 |
@@ -22,8 +23,9 @@ mysql> INSERT INTO clients values (2, 011235, "Jeron", "C.E.O", "Male", 4025), (
 Query OK, 2 rows affected (0.00 sec)
 Records: 2  Duplicates: 0  Warnings: 0
 
-mysql> SELECT * FROM clients; 
-                                                                                  +----+----------------+---------+------------+--------+---------+
+mysql> SELECT * FROM clients;
+
++----+----------------+---------+------------+--------+---------+
 | id | account_number | name    | job        | gender | balance |
 +----+----------------+---------+------------+--------+---------+
 |  1 |          11234 | Steve   | Programmer | Male   |      25 |
