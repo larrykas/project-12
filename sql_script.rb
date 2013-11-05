@@ -94,3 +94,13 @@ mysql> SELECT * FROM employees;
 |  3 | Provard | Accountant | Female |
 +----+---------+------------+--------+
 3 rows in set (0.00 sec)
+
+mysql> SELECT employees.name, account_number, balance FROM clients RIGHT OUTER JOIN employees ON clients.id = employees.id;
++---------+----------------+---------+
+| name    | account_number | balance |
++---------+----------------+---------+
+| Books   |          11234 |      25 |
+| Jeron   |          11235 |    4025 |
+| Provard |          11236 |     300 |
++---------+----------------+---------+
+3 rows in set (0.00 sec)
