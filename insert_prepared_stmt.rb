@@ -13,7 +13,7 @@ begin
      puts "Record has been created"
 rescue Exception => e
      puts "e"
-     puts "e.backtrace.join('\n')"
+     puts e.backtrace.join('\n')
      
 ensure
      # disconnects from server
