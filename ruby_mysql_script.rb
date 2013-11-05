@@ -4,7 +4,7 @@ require 'mysql'
 
 begin
      # connect to the MySQL server
-     con = Mysql.new 'localhost', 'root', 'vanniekerk', 'banking_system'
+     con = Mysql.new 'localhost', 'root', '**********', 'banking_system'
      con.query("CREATE TABLE ruby_mada ( id integer NOT NULL primary key, name varchar(50), job varchar(50), gender varchar(6));")
      
      sth = con.prepare( "INSERT INTO ruby_mada(id, name, job, gender)VALUES (?, ?, ?, ?)" )
